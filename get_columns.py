@@ -1,16 +1,16 @@
-def get_columns_for_blind_stats(asset, user, request_data, team=None, timeout=10):
+def get_columns(asset, user, request_data, team=None, timeout=10):
     """
     This function retrieves data from a blind sample, and then returns the names of fields
     which are either 'int64' or 'float64'.
     """
     INT_FLOAT_TYPES = ("int64", "float64")
-    owner_team = asset.owner_team
-    url = owner_team.organization.access_point.uri.replace("//", "")
-    url = f"https://{url}/blind_sample/{asset.filename}/spec"
+    owner_team = REDACTED
+    url = REDACTED
+    url = REDACTED
     headers = {
-        "Authorization": f"Bearer {Generator().issue_provider_marketplace(owner_team.organization.id)}",
+        "Authorization": f"Bearer REDACTED",
         "Accept": "text/csv",
-        "Requester": str(user.get_users_team(team).id),
+        "Requester": REDACTED,
     }
     try:
         response = requests.get(
