@@ -13,3 +13,8 @@ Code Snippets I'm Proud to Have Written
 - The odd structure is to avoid needing to use a third party package with a lot of overhead like React Hook Forms
 - The Process generates a certain set of input fields that can be added and removed
 - those fields remain in sync with one another -- esp tricky when dealing with MUI autocomplete
+
+### validator.ts
+- relies on a call to a json schema I set up at a previous company to accomplish type validation across services
+- creates the necessary data and in the neccesary shape to post to one of our services
+- particularly proud of the types (I cannot share those) but the class, when invoked, will infer the meta template, an incredibly neccesary process when uploading datasets in our use case
