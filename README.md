@@ -24,3 +24,8 @@ Code Snippets I'm Proud to Have Written
 - users can select this type of generator from the client
 - it would then talk to our many different services and eventually land here
 - it would take in the column data and rewrite it to be whatever type the user had specified, and overwrite the csv file (not shown)
+
+### [useCommits.ts](https://github.com/awburgard/code-snippets/blob/master/useCommits.ts)
+- a custom hook to fetch github commits from different services
+- does a diff check to see if all services are on the same commit, if they are return the main services commit sha
+- otherwise return the services and their respective shas
