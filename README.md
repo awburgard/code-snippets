@@ -19,7 +19,7 @@ Code Snippets I'm Proud to Have Written
 - creates the necessary data and in the neccesary shape to post to one of our services
 - particularly proud of the types (I cannot share those) but the class, when invoked, will infer the meta template, an incredibly neccesary process when uploading datasets in our use case
 
-### date_time_generator.py
+### [date_time_generator.py](https://github.com/awburgard/code-snippets/blob/master/date_time_generator.py)
 - a custom date_time mock data generator based on faker.py
 - users can select this type of generator from the client
 - it would then talk to our many different services and eventually land here
