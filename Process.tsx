@@ -2,7 +2,7 @@ import React from 'react'
 
 
 export const Process: React.FC = () => {
-  const [storedAssets, setStoredAssets] = useSessionStorage<Fields[]>('blind_stats_assets', [
+  const [storedAssets, setStoredAssets] = useSessionStorage<Fields[]>('REDACTED', [
     { id: Math.random(), asset: null },
   ]);
 
@@ -67,7 +67,7 @@ export const DynamicInputFields: React.FC<Props> = () => {
             {inputFields.map((field, index) => (
               <Grid item xs={12}>
                 <Autocomplete
-                  id="blind-stats-autocomplete"
+                  id="REDACTED"
                   fullWidth
                   options={data.data || []}
                   loading={data.isLoading}
@@ -80,7 +80,7 @@ export const DynamicInputFields: React.FC<Props> = () => {
                     <TextField
                       {...params}
                       label="Dataset Name or ID"
-                      data-cy="blind-stats-autocomplete"
+                      data-cy="REDACTED"
                       InputProps={{
                         ...params.InputProps,
                         endAdornment: inputFields.length > 1 && (
