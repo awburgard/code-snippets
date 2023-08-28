@@ -53,11 +53,11 @@ class PackageSchema {
     }
 
     const formData = new FormData();
-    formData.append('original_filename', this.filename.replace(/\.[^/.]+$/, '') + '.zip');
-    formData.append('asset_filename', this.filename);
-    formData.append('asset_name', this.name);
-    formData.append('asset_desc', this.description);
-    formData.append('file', this.blob);
+    formData.append(REDACTED, this.filename.replace(/\.[^/.]+$/, '') + '.zip');
+    formData.append(REDACTED, this.filename);
+    formData.append(REDACTED, this.name);
+    formData.append(REDACTED, this.description);
+    formData.append(REDACTED, this.blob);
 
     this.form = formData;
 
