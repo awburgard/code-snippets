@@ -8,12 +8,6 @@ Code Snippets I'm Proud to Have Written
 - fetches data from an endpoint (in this case it was a massive dataset)
 - The data could only be of a certain type -- this uses a python generator function, based on the returned date and types, to conserve memory (since we don't know the size of the dataset) and casts the final result to a list to be consumed by the client
 
-### [Process.tsx](https://github.com/awburgard/code-snippets/blob/master/Process.tsx)
-- a lot of code redacted here
-- The odd structure is to avoid needing to use a third party package with a lot of overhead like React Hook Forms
-- The Process generates a certain set of input fields that can be added and removed
-- those fields remain in sync with one another -- esp tricky when dealing with MUI autocomplete
-
 ### [validator.ts](https://github.com/awburgard/code-snippets/blob/master/validator.ts)
 - relies on a call to a json schema I set up at a previous company to accomplish type validation across services
 - creates the necessary data and in the neccesary shape to post to one of our services
