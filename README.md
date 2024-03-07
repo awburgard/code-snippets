@@ -1,6 +1,9 @@
 # Code Snippets
 Code Snippets I'm Proud to Have Written
 
+### [tree-stuff.ts](https://github.com/awburgard/code-snippets/blob/master/tree-stuff.ts)
+- utilities to handle tree creation and interaction within MUI's Tree component
+
 ### [useSessionStorage.ts](https://github.com/awburgard/code-snippets/blob/master/useSessionStorage.ts)
 - Like useLocalStorage but can be used for session storage -- useful for form state when navigating in wizard and can be used to notify user when navigating away from the page if they're data will persist or not
 
